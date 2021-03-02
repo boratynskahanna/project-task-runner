@@ -1,10 +1,59 @@
+/*Global*/
+$color-one: white;
+$color-two: #f7d794;
+$color-three: #2f3542;
+$color-four: #f1f2f6;
+$font-one: 'Quicksand', sans-serif;
+$font-two: 'Dancing Script', cursive;
+
+body {
+    font-family: $font-one;
+}
+
+h6 {
+    font-family: $font-two;
+    font-size: 20px;
+}
+
+.main-subtitle, h2 {
+    font-weight: 700;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /*Navigation*/
 
-.nav-link, .navbar-brand, .dropdown-item, {
-    color: #ffffff;    
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.nav-link, .dropdown-item, {
+    color: $color-one;    
+}
+
+.navbar-brand {
+    color: $color-two;
+    font-family: $font-two;
 }
 
 /*Main Picture*/
+
+.btn-primary {
+    background: $color-two;
+    width: 200px;
+    height: 50px;
+    border: none;
+    font-size: 15px;
+    justify-content: center;
+    align-content: center;
+}
 
 .main-title {
     font-size: 40px;
@@ -12,7 +61,6 @@
 
 .main-subtitle {
     font-size: 70px;
-    
 }
 
 .carousel-inner, .carousel-item {
@@ -40,23 +88,31 @@
 
 .container .card {
     border: none;
+    align-items: center;
 }
 
 .services-title .portfolio-title {
-    display:contents;
+    display: contents;
     justify-content: center;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-image i {
     font-size: 30px;
-    background: #ffffff;
+    background: $color-one;
     width: 60px;
     height: 60px;
-    color: #2f3542;
+    color: $color-two;
     border-radius: 50%;
-    line-height: 60px;
+    line-height: 55px;
     text-align: center;
-    border: 3px solid #2f3542;;
+    border: 3px solid $color-two;
 }
 
 /*Portfolio*/
@@ -67,26 +123,43 @@
     object-fit: cover;
 }
 
+.portfolio {
+    background: $color-four;
+}
+
 /*Footer*/
 
 .footer .row {
     margin: 0 auto;
-    color: #2f3542;
+    color: $color-three;
     align-items: center;
 }
 
 .list-unstyled li{
     display: inline-flex;    
-    padding: 10px;
+    padding: 5px;
 }
 
 .list-inline-item i {
-    font-size: 30px;
-    background: #2f3542;
-    width: 60px;
-    height: 60px;
-    color: #ffffff;
+    font-size: 20px;
+    background: $color-three;
+    width: 40px;
+    height: 40px;
+    color: $color-one;
     border-radius: 50%;
-    line-height: 60px;
+    line-height: 40px;
     text-align: center;
 }
+
+.footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.list-unstyled {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
