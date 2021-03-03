@@ -28,9 +28,6 @@ h6 {
 /*Navigation*/
 
 .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     background-color: transparent;
 }
 
@@ -48,7 +45,7 @@ h6 {
 .btn-primary {
     background: $color-two;
     width: 200px;
-    height: 50px;
+    padding: 20px;
     border: none;
     font-size: 15px;
     justify-content: center;
@@ -124,6 +121,10 @@ h6 {
 }
 
 .portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: $color-four;
 }
 
